@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacao 2</title>
+    <style>
+        .caixa{
+            background-color: #FFF;
+            width: 250px;
+            height: 200px;
+            display: table;
+            text-align: center;
+            padding: 0 25px;
+            position: absolute;
+            border: solid thin #ccc;
+        }
+ 
+        .caixa p{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        /* Animação - Webkit */
+        @-webkit-keyframes anime{
+            0% {
+                background: #FFF;
+                opacity: 0;
+            }
+ 
+            40%{
+                background:#FFF;
+                opacity: 0;
+            }
+ 
+            50%{
+                background-color: #d83061;
+                opacity: 1;
+            }
+ 
+            90%{
+                background-color: #d83061;
+                opacity: 1;
+            }
+ 
+            100%{
+                background: #FFF;
+                opacity: 0;
+            }
+        }
+ 
+        .animeGo{
+            -webkit-animation: anime 3s ease .5s infinite alternate running;
+        }
+ 
+        /* Animação - padrão */
+         @keyframes anime{
+            0% {
+                background: #FFF;
+                opacity: 0;
+            }
+ 
+            40%{
+                background:#FFF;
+                opacity: 0;
+            }
+ 
+            50%{
+                background-color: #d83061;
+                opacity: 1;
+            }
+ 
+            90%{
+                background-color: #d83061;
+                opacity: 1;
+            }
+ 
+            100%{
+                background: #FFF;
+                opacity: 0;
+            }
+        }
+ 
+        .animeGo{
+            -webkit-animation: anime 3s ease .5s infinite alternate running;
+        }
+ 
+    </style>
+</head>
+
+<body>
+    <h1>Transições e animações</h1>
+    <h2>Animação 02</h2>
+    <div class="caixa">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem, eius necessitatibus
+        laudantium atque qui dolor aut quia repudiandae vel est dolore quam accusamus fugiat quaerat dolorum labore!
+        Molestiae, officia!</div>
+    <div class="caixa animeGo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolorem placeat quae
+        assumenda corporis ad ipsam delectus reiciendis inventore eius? Quidem, sequi eum dignissimos ut quia error ab
+        harum unde.</div>
+</body>
+
+</html>
